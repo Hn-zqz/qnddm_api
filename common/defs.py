@@ -182,7 +182,7 @@ def now_to_timestamp(digits = 10):
     return time_stamp
 
 def get_record(headers):
-    url = "http://192.168.220.1:8080/users/editviewAction?record=&invalid_ie_cache=" + str(now_to_timestamp(digits=13))
+    url = "http://192.168.2.129:8080/users/editviewAction?record=&invalid_ie_cache=" + str(now_to_timestamp(digits=13))
     r = requests.get(url=url, headers=headers)
     tree = etree.HTML(r.text)
     return tree.xpath("//input[@name='record']/@value")[0]
