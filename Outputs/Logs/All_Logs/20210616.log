@@ -1,0 +1,1260 @@
+2021-06-16 09:39:01,904 - root - INFO - user_management  - 61 - 开始执行	停用正常用户	测试用例
+2021-06-16 09:39:01,940 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:39:01,945 - root - INFO - user_management  - 61 - 开始执行	停用id为空	测试用例
+2021-06-16 09:39:01,976 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:39:01,979 - root - INFO - user_management  - 61 - 开始执行	停用admin用户	测试用例
+2021-06-16 09:39:02,010 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:39:02,013 - root - INFO - user_management  - 61 - 开始执行	启用已停用用户	测试用例
+2021-06-16 09:39:02,041 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:39:02,044 - root - INFO - user_management  - 61 - 开始执行	启用id为空	测试用例
+2021-06-16 09:39:02,068 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:39:02,071 - root - INFO - user_management  - 52 - 开始执行	修改账号名称为正确数据	测试用例
+2021-06-16 09:39:02,094 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:39:02,097 - root - INFO - user_management  - 52 - 开始执行	修改账号名称为空	测试用例
+2021-06-16 09:39:02,128 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:39:02,132 - root - INFO - user_management  - 52 - 开始执行	修改账号名称已存在	测试用例
+2021-06-16 09:39:02,171 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:39:02,174 - root - INFO - user_management  - 52 - 开始执行	record为空	测试用例
+2021-06-16 09:39:02,211 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:39:02,216 - root - INFO - user_management  - 52 - 开始执行	record错误	测试用例
+2021-06-16 09:39:02,249 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:51:07,770 - root - INFO - user_management  - 41 - 开始执行	密码为13位字符	测试用例
+2021-06-16 09:51:08,003 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:08,007 - root - INFO - user_management  - 44 - case:密码为13位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7543&account=254783&mobile=17628841839
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:07 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"code":500
+
+2021-06-16 09:51:08,199 - root - INFO - user_management  - 41 - 开始执行	部门为空	测试用例
+2021-06-16 09:51:08,809 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:08,811 - root - INFO - user_management  - 44 - case:部门为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7544&account=559581&mobile=17633886524
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:08 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7544","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:51:09,013 - root - INFO - user_management  - 41 - 开始执行	手机号为空	测试用例
+2021-06-16 09:51:09,092 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:09,093 - root - INFO - user_management  - 44 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7545&account=171373
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:08 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:51:09,893 - root - INFO - user_management  - 41 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:51:10,079 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:10,081 - root - INFO - user_management  - 44 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7546&account=653585
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:09 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:51:10,282 - root - INFO - user_management  - 41 - 开始执行	手机号错误	测试用例
+2021-06-16 09:51:10,496 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:10,498 - root - INFO - user_management  - 44 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7547&account=826195
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:09 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:51:10,691 - root - INFO - user_management  - 41 - 开始执行	排序号为空	测试用例
+2021-06-16 09:51:11,138 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:11,139 - root - INFO - user_management  - 44 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7548&account=854726&mobile=17643646718
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7548","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:51:11,330 - root - INFO - user_management  - 41 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:51:11,713 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:11,714 - root - INFO - user_management  - 44 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7549&account=676827&mobile=17623274573
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:51:11,896 - root - INFO - user_management  - 41 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:51:11,982 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:11,984 - root - INFO - user_management  - 44 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7550&mobile=17648526251
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:51:12,165 - root - INFO - user_management  - 41 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:51:12,303 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:12,305 - root - INFO - user_management  - 44 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7551&mobile=17618892823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:12 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:51:12,514 - root - INFO - user_management  - 41 - 开始执行	姓名为空	测试用例
+2021-06-16 09:51:13,000 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:13,002 - root - INFO - user_management  - 44 - case:姓名为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '169'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=&record=7552&account=146238&mobile=17697361791
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:12 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7552","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:51:13,182 - root - INFO - user_management  - 41 - 开始执行	密码为空	测试用例
+2021-06-16 09:51:13,430 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:13,431 - root - INFO - user_management  - 44 - case:密码为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=&roleid.id=&sequence=100&status=Active&username=姓名&record=7553&account=347573&mobile=17645197274
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账号密码不能为空","code":500,"message":"账号密码不能为空"}
+预期结果"msg":"账号密码不能为空"
+
+2021-06-16 09:51:13,663 - root - INFO - user_management  - 41 - 开始执行	密码为5位字符	测试用例
+2021-06-16 09:51:13,917 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:13,918 - root - INFO - user_management  - 44 - case:密码为5位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7554&account=683798&mobile=17652351792
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"msg":"密码长度不能小于6位"
+
+2021-06-16 09:51:14,132 - root - INFO - user_management  - 41 - 开始执行	密码为6位纯数字	测试用例
+2021-06-16 09:51:14,354 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:14,355 - root - INFO - user_management  - 44 - case:密码为6位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456&roleid.id=&sequence=100&status=Active&username=姓名&record=7555&account=969198&mobile=17668259543
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:51:14,558 - root - INFO - user_management  - 41 - 开始执行	密码为6位纯英文	测试用例
+2021-06-16 09:51:14,810 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:14,811 - root - INFO - user_management  - 44 - case:密码为6位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqw&roleid.id=&sequence=100&status=Active&username=姓名&record=7556&account=142185&mobile=17669633254
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:51:15,008 - root - INFO - user_management  - 41 - 开始执行	密码为12位纯数字	测试用例
+2021-06-16 09:51:15,247 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:15,248 - root - INFO - user_management  - 44 - case:密码为12位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456654321&roleid.id=&sequence=100&status=Active&username=姓名&record=7557&account=612256&mobile=17624131374
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:51:15,440 - root - INFO - user_management  - 41 - 开始执行	密码为12位纯英文	测试用例
+2021-06-16 09:51:15,687 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:51:15,689 - root - INFO - user_management  - 44 - case:密码为12位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqwasdfgh&roleid.id=&sequence=100&status=Active&username=姓名&record=7558&account=917915&mobile=17642924957
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:51:15,690 - root - INFO - user_management  - 62 - 开始执行	停用正常用户	测试用例
+2021-06-16 09:51:16,006 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:51:16,007 - root - INFO - user_management  - 65 - case:停用正常用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用成功！","code":200,"refresh":true,"message":"停用成功！"}
+预期结果"msg":"停用成功！"
+
+2021-06-16 09:51:16,008 - root - INFO - user_management  - 62 - 开始执行	停用id为空	测试用例
+2021-06-16 09:51:16,065 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:51:16,066 - root - INFO - user_management  - 65 - case:停用id为空，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用失败，请稍候再试。。。","code":500,"message":"停用失败，请稍候再试。。。"}
+预期结果"msg":"停用失败，请稍候再试。。。"
+
+2021-06-16 09:51:16,068 - root - INFO - user_management  - 62 - 开始执行	停用admin用户	测试用例
+2021-06-16 09:51:16,210 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:51:16,211 - root - INFO - user_management  - 65 - case:停用admin用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '11'}
+请求正文：ids[]=1
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"【admin】不能被停用！","code":500,"message":"【admin】不能被停用！"}
+预期结果"msg":"【admin】不能被停用！"
+
+2021-06-16 09:51:16,212 - root - INFO - user_management  - 62 - 开始执行	启用已停用用户	测试用例
+2021-06-16 09:51:16,497 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:51:16,498 - root - INFO - user_management  - 65 - case:启用已停用用户，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用成功！","code":200,"refresh":true,"message":"启用成功！"}
+预期结果"msg":"启用成功！"
+
+2021-06-16 09:51:16,499 - root - INFO - user_management  - 62 - 开始执行	启用id为空	测试用例
+2021-06-16 09:51:16,565 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:51:16,566 - root - INFO - user_management  - 65 - case:启用id为空，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用失败，请稍候再试。。。","code":500,"message":"启用失败，请稍候再试。。。"}
+预期结果"msg":"启用失败，请稍候再试。。。"
+
+2021-06-16 09:51:16,567 - root - INFO - user_management  - 53 - 开始执行	修改账号名称为正确数据	测试用例
+2021-06-16 09:51:16,985 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:51:16,987 - root - INFO - user_management  - 56 - case:修改账号名称为正确数据，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '57'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=764646
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改完成","code":200,"refresh":true,"message":"修改完成"}
+预期结果"msg":"修改完成"
+
+2021-06-16 09:51:16,989 - root - INFO - user_management  - 53 - 开始执行	修改账号名称为空	测试用例
+2021-06-16 09:51:17,093 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:51:17,094 - root - INFO - user_management  - 56 - case:修改账号名称为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '51'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:51:17,096 - root - INFO - user_management  - 53 - 开始执行	修改账号名称已存在	测试用例
+2021-06-16 09:51:17,225 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:51:17,227 - root - INFO - user_management  - 56 - case:修改账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '56'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=admin
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:51:17,229 - root - INFO - user_management  - 53 - 开始执行	record为空	测试用例
+2021-06-16 09:51:17,694 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:51:17,695 - root - INFO - user_management  - 56 - case:record为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '54'}
+请求正文：invalid_ie_cache=1621303542499&record=&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
+2021-06-16 09:51:17,696 - root - INFO - user_management  - 53 - 开始执行	record错误	测试用例
+2021-06-16 09:51:17,850 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:51:17,851 - root - INFO - user_management  - 56 - case:record错误，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '58'}
+请求正文：invalid_ie_cache=1621303542499&record=-789&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:51:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
+2021-06-16 09:53:10,809 - root - INFO - user_management  - 40 - 开始执行	密码为13位字符	测试用例
+2021-06-16 09:53:11,660 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:11,664 - root - INFO - user_management  - 43 - case:密码为13位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7559&account=659218&mobile=17642586553
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:10 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"code":500
+
+2021-06-16 09:53:12,338 - root - INFO - user_management  - 40 - 开始执行	部门为空	测试用例
+2021-06-16 09:53:12,338 - root - INFO - user_management  - 40 - 开始执行	部门为空	测试用例
+2021-06-16 09:53:14,600 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:14,600 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:14,601 - root - INFO - user_management  - 43 - case:部门为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7560&account=929499&mobile=17683539153
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7560","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:14,601 - root - INFO - user_management  - 43 - case:部门为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7560&account=929499&mobile=17683539153
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7560","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:15,103 - root - INFO - user_management  - 40 - 开始执行	手机号为空	测试用例
+2021-06-16 09:53:15,103 - root - INFO - user_management  - 40 - 开始执行	手机号为空	测试用例
+2021-06-16 09:53:15,103 - root - INFO - user_management  - 40 - 开始执行	手机号为空	测试用例
+2021-06-16 09:53:15,167 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,167 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,167 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,168 - root - INFO - user_management  - 43 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7561&account=588354
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:15,168 - root - INFO - user_management  - 43 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7561&account=588354
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:15,168 - root - INFO - user_management  - 43 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7561&account=588354
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:15,410 - root - INFO - user_management  - 40 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:53:15,410 - root - INFO - user_management  - 40 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:53:15,410 - root - INFO - user_management  - 40 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:53:15,410 - root - INFO - user_management  - 40 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:53:15,612 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,612 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,612 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,612 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,617 - root - INFO - user_management  - 43 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7562&account=172697
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:15,617 - root - INFO - user_management  - 43 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7562&account=172697
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:15,617 - root - INFO - user_management  - 43 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7562&account=172697
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:15,617 - root - INFO - user_management  - 43 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7562&account=172697
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:15,807 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:53:15,807 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:53:15,807 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:53:15,807 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:53:15,807 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:53:15,980 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,980 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,980 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,980 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,980 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:15,982 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7563&account=772873
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:53:15,982 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7563&account=772873
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:53:15,982 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7563&account=772873
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:53:15,982 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7563&account=772873
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:53:15,982 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7563&account=772873
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,168 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,615 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,618 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7564&account=577254&mobile=17696562133
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7564","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:16,808 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,229 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,231 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7565&account=743761&mobile=17652123823
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,488 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,546 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,548 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7566&mobile=17687525759
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:16 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,764 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,866 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:17,894 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7567&mobile=17693392745
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:53:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:53:18,081 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:54:10,213 - root - INFO - user_management  - 40 - 开始执行	密码为13位字符	测试用例
+2021-06-16 09:54:10,450 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:10,452 - root - INFO - user_management  - 43 - case:密码为13位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7569&account=556442&mobile=17689214888
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:10 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"code":500
+
+2021-06-16 09:54:10,625 - root - INFO - user_management  - 40 - 开始执行	部门为空	测试用例
+2021-06-16 09:54:11,184 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:11,185 - root - INFO - user_management  - 43 - case:部门为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7570&account=513557&mobile=17645234234
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:10 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7570","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:54:11,385 - root - INFO - user_management  - 40 - 开始执行	手机号为空	测试用例
+2021-06-16 09:54:11,459 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:11,461 - root - INFO - user_management  - 43 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7571&account=855381
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:54:11,645 - root - INFO - user_management  - 40 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:54:11,850 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:11,851 - root - INFO - user_management  - 43 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7572&account=635519
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:54:12,039 - root - INFO - user_management  - 40 - 开始执行	手机号错误	测试用例
+2021-06-16 09:54:12,241 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:12,244 - root - INFO - user_management  - 43 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7573&account=985934
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:11 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:54:12,441 - root - INFO - user_management  - 40 - 开始执行	排序号为空	测试用例
+2021-06-16 09:54:13,010 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:13,011 - root - INFO - user_management  - 43 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7574&account=246568&mobile=17626554929
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:12 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7574","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:54:13,186 - root - INFO - user_management  - 40 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:54:13,566 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:13,569 - root - INFO - user_management  - 43 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7575&account=461544&mobile=17662475783
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:54:13,765 - root - INFO - user_management  - 40 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:54:13,836 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:13,837 - root - INFO - user_management  - 43 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7576&mobile=17658287663
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:54:14,033 - root - INFO - user_management  - 40 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:54:14,147 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:14,148 - root - INFO - user_management  - 43 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7577&mobile=17639131388
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:54:14,331 - root - INFO - user_management  - 40 - 开始执行	姓名为空	测试用例
+2021-06-16 09:54:14,752 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:14,756 - root - INFO - user_management  - 43 - case:姓名为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '169'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=&record=7578&account=995995&mobile=17614828372
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7578","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:54:14,939 - root - INFO - user_management  - 40 - 开始执行	密码为空	测试用例
+2021-06-16 09:54:15,162 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:15,163 - root - INFO - user_management  - 43 - case:密码为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=&roleid.id=&sequence=100&status=Active&username=姓名&record=7579&account=192866&mobile=17632542821
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账号密码不能为空","code":500,"message":"账号密码不能为空"}
+预期结果"msg":"账号密码不能为空"
+
+2021-06-16 09:54:15,316 - root - INFO - user_management  - 40 - 开始执行	密码为5位字符	测试用例
+2021-06-16 09:54:15,540 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:15,541 - root - INFO - user_management  - 43 - case:密码为5位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7580&account=593348&mobile=17626518251
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"msg":"密码长度不能小于6位"
+
+2021-06-16 09:54:15,812 - root - INFO - user_management  - 40 - 开始执行	密码为6位纯数字	测试用例
+2021-06-16 09:54:16,028 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:16,029 - root - INFO - user_management  - 43 - case:密码为6位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456&roleid.id=&sequence=100&status=Active&username=姓名&record=7581&account=834841&mobile=17623641356
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:54:16,230 - root - INFO - user_management  - 40 - 开始执行	密码为6位纯英文	测试用例
+2021-06-16 09:54:16,623 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:16,624 - root - INFO - user_management  - 43 - case:密码为6位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqw&roleid.id=&sequence=100&status=Active&username=姓名&record=7582&account=963795&mobile=17653577943
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:54:16,808 - root - INFO - user_management  - 40 - 开始执行	密码为12位纯数字	测试用例
+2021-06-16 09:54:17,049 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:17,051 - root - INFO - user_management  - 43 - case:密码为12位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456654321&roleid.id=&sequence=100&status=Active&username=姓名&record=7583&account=643651&mobile=17617552366
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:54:17,252 - root - INFO - user_management  - 40 - 开始执行	密码为12位纯英文	测试用例
+2021-06-16 09:54:17,483 - root - INFO - user_management  - 42 - 正在进行对比
+2021-06-16 09:54:17,484 - root - INFO - user_management  - 43 - case:密码为12位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqwasdfgh&roleid.id=&sequence=100&status=Active&username=姓名&record=7584&account=415324&mobile=17625964713
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:54:17,486 - root - INFO - user_management  - 61 - 开始执行	停用正常用户	测试用例
+2021-06-16 09:54:17,832 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:54:17,833 - root - INFO - user_management  - 64 - case:停用正常用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用成功！","code":200,"refresh":true,"message":"停用成功！"}
+预期结果"msg":"停用成功！"
+
+2021-06-16 09:54:17,834 - root - INFO - user_management  - 61 - 开始执行	停用id为空	测试用例
+2021-06-16 09:54:17,910 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:54:17,912 - root - INFO - user_management  - 64 - case:停用id为空，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用失败，请稍候再试。。。","code":500,"message":"停用失败，请稍候再试。。。"}
+预期结果"msg":"停用失败，请稍候再试。。。"
+
+2021-06-16 09:54:17,914 - root - INFO - user_management  - 61 - 开始执行	停用admin用户	测试用例
+2021-06-16 09:54:18,026 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:54:18,028 - root - INFO - user_management  - 64 - case:停用admin用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '11'}
+请求正文：ids[]=1
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"【admin】不能被停用！","code":500,"message":"【admin】不能被停用！"}
+预期结果"msg":"【admin】不能被停用！"
+
+2021-06-16 09:54:18,029 - root - INFO - user_management  - 61 - 开始执行	启用已停用用户	测试用例
+2021-06-16 09:54:18,302 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:54:18,303 - root - INFO - user_management  - 64 - case:启用已停用用户，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用成功！","code":200,"refresh":true,"message":"启用成功！"}
+预期结果"msg":"启用成功！"
+
+2021-06-16 09:54:18,304 - root - INFO - user_management  - 61 - 开始执行	启用id为空	测试用例
+2021-06-16 09:54:18,369 - root - INFO - user_management  - 63 - 正在进行对比
+2021-06-16 09:54:18,370 - root - INFO - user_management  - 64 - case:启用id为空，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用失败，请稍候再试。。。","code":500,"message":"启用失败，请稍候再试。。。"}
+预期结果"msg":"启用失败，请稍候再试。。。"
+
+2021-06-16 09:54:18,372 - root - INFO - user_management  - 52 - 开始执行	修改账号名称为正确数据	测试用例
+2021-06-16 09:54:18,853 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:54:18,855 - root - INFO - user_management  - 55 - case:修改账号名称为正确数据，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '57'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=887884
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改完成","code":200,"refresh":true,"message":"修改完成"}
+预期结果"msg":"修改完成"
+
+2021-06-16 09:54:18,857 - root - INFO - user_management  - 52 - 开始执行	修改账号名称为空	测试用例
+2021-06-16 09:54:18,990 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:54:18,992 - root - INFO - user_management  - 55 - case:修改账号名称为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '51'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:54:18,994 - root - INFO - user_management  - 52 - 开始执行	修改账号名称已存在	测试用例
+2021-06-16 09:54:19,097 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:54:19,098 - root - INFO - user_management  - 55 - case:修改账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '56'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=admin
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:54:19,100 - root - INFO - user_management  - 52 - 开始执行	record为空	测试用例
+2021-06-16 09:54:19,233 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:54:19,234 - root - INFO - user_management  - 55 - case:record为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '54'}
+请求正文：invalid_ie_cache=1621303542499&record=&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
+2021-06-16 09:54:19,235 - root - INFO - user_management  - 52 - 开始执行	record错误	测试用例
+2021-06-16 09:54:19,426 - root - INFO - user_management  - 54 - 正在进行对比
+2021-06-16 09:54:19,427 - root - INFO - user_management  - 55 - case:record错误，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '58'}
+请求正文：invalid_ie_cache=1621303542499&record=-789&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:54:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
+2021-06-16 09:56:12,291 - root - INFO - user_management  - 41 - 开始执行	密码为13位字符	测试用例
+2021-06-16 09:56:12,511 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:12,514 - root - INFO - user_management  - 44 - case:密码为13位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7585&account=344646&mobile=17624368232
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:12 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"code":500
+
+2021-06-16 09:56:12,685 - root - INFO - user_management  - 41 - 开始执行	部门为空	测试用例
+2021-06-16 09:56:13,196 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:13,197 - root - INFO - user_management  - 44 - case:部门为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7586&account=187176&mobile=17699996395
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:12 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7586","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:56:13,397 - root - INFO - user_management  - 41 - 开始执行	手机号为空	测试用例
+2021-06-16 09:56:13,460 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:13,461 - root - INFO - user_management  - 44 - case:手机号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '176'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=&roleid.id=&sequence=100&status=Active&username=姓名&record=7587&account=293749
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码不能为空！","code":500,"message":"手机号码不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:56:13,657 - root - INFO - user_management  - 41 - 开始执行	手机号已存在	测试用例
+2021-06-16 09:56:13,845 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:13,846 - root - INFO - user_management  - 44 - case:手机号已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=15974160308&roleid.id=&sequence=100&status=Active&username=姓名&record=7588&account=342994
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"msg":"手机号码已经存在，请更换后再试。。。"
+
+2021-06-16 09:56:14,011 - root - INFO - user_management  - 41 - 开始执行	手机号错误	测试用例
+2021-06-16 09:56:14,186 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:14,188 - root - INFO - user_management  - 44 - case:手机号错误，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '179'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&mobile=110&roleid.id=&sequence=100&status=Active&username=姓名&record=7589&account=939496
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:13 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"手机号码已经存在，请更换后再试。。。","code":500,"message":"手机号码已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:56:14,360 - root - INFO - user_management  - 41 - 开始执行	排序号为空	测试用例
+2021-06-16 09:56:14,841 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:14,843 - root - INFO - user_management  - 44 - case:排序号为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '184'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=&status=Active&username=姓名&record=7590&account=943622&mobile=17683833366
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7590","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:56:15,067 - root - INFO - user_management  - 41 - 开始执行	用户类型为空	测试用例
+2021-06-16 09:56:15,481 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:15,482 - root - INFO - user_management  - 44 - case:用户类型为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '185'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7591&account=923669&mobile=17669857578
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"创建用户失败，请稍后再试。。。","code":500,"message":"创建用户失败，请稍后再试。。。"}
+预期结果"msg":"创建用户失败，请稍后再试。。。"
+
+2021-06-16 09:56:15,653 - root - INFO - user_management  - 41 - 开始执行	账号名称为空	测试用例
+2021-06-16 09:56:15,734 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:15,735 - root - INFO - user_management  - 44 - case:账号名称为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：account=&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7592&mobile=17637536916
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:14 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称不能为空！","code":500,"message":"账户名称不能为空！"}
+预期结果"code":500
+
+2021-06-16 09:56:15,941 - root - INFO - user_management  - 41 - 开始执行	账号名称已存在	测试用例
+2021-06-16 09:56:16,059 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:16,060 - root - INFO - user_management  - 44 - case:账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：account=admin&departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=姓名&record=7593&mobile=17641965168
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:56:16,270 - root - INFO - user_management  - 41 - 开始执行	姓名为空	测试用例
+2021-06-16 09:56:16,767 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:16,770 - root - INFO - user_management  - 44 - case:姓名为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '169'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qwe&roleid.id=&sequence=100&status=Active&username=&record=7594&account=919212&mobile=17658485145
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:15 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"保存完成！","code":200,"record":"7594","refresh":true,"message":"保存完成！"}
+预期结果"code":500
+
+2021-06-16 09:56:16,936 - root - INFO - user_management  - 41 - 开始执行	密码为空	测试用例
+2021-06-16 09:56:17,202 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:17,203 - root - INFO - user_management  - 44 - case:密码为空，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '181'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=&roleid.id=&sequence=100&status=Active&username=姓名&record=7595&account=211927&mobile=17659264346
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账号密码不能为空","code":500,"message":"账号密码不能为空"}
+预期结果"msg":"账号密码不能为空"
+
+2021-06-16 09:56:17,378 - root - INFO - user_management  - 41 - 开始执行	密码为5位字符	测试用例
+2021-06-16 09:56:17,629 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:17,630 - root - INFO - user_management  - 44 - case:密码为5位字符，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '186'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123qw&roleid.id=&sequence=100&status=Active&username=姓名&record=7596&account=185675&mobile=17656193144
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码长度不能小于6位","code":500,"message":"密码长度不能小于6位"}
+预期结果"msg":"密码长度不能小于6位"
+
+2021-06-16 09:56:17,836 - root - INFO - user_management  - 41 - 开始执行	密码为6位纯数字	测试用例
+2021-06-16 09:56:18,112 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:18,113 - root - INFO - user_management  - 44 - case:密码为6位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456&roleid.id=&sequence=100&status=Active&username=姓名&record=7597&account=889868&mobile=17685876257
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:17 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:56:18,316 - root - INFO - user_management  - 41 - 开始执行	密码为6位纯英文	测试用例
+2021-06-16 09:56:18,563 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:18,565 - root - INFO - user_management  - 44 - case:密码为6位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '187'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqw&roleid.id=&sequence=100&status=Active&username=姓名&record=7598&account=825926&mobile=17635389999
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:56:18,792 - root - INFO - user_management  - 41 - 开始执行	密码为12位纯数字	测试用例
+2021-06-16 09:56:19,038 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:19,039 - root - INFO - user_management  - 44 - case:密码为12位纯数字，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=123456654321&roleid.id=&sequence=100&status=Active&username=姓名&record=7599&account=917924&mobile=17691783396
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:18 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:56:19,232 - root - INFO - user_management  - 41 - 开始执行	密码为12位纯英文	测试用例
+2021-06-16 09:56:19,474 - root - INFO - user_management  - 43 - 正在进行对比
+2021-06-16 09:56:19,475 - root - INFO - user_management  - 44 - case:密码为12位纯英文，
+请求地址：http://192.168.220.1:8080/users/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '193'}
+请求正文：departmentid.id=462&directsuperior.id=&is_admin=pt&mailbox=&password=qwerqwasdfgh&roleid.id=&sequence=100&status=Active&username=姓名&record=7600&account=375683&mobile=17698388413
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"密码必须同时包含数字与字母!","code":500,"message":"密码必须同时包含数字与字母!"}
+预期结果"msg":"密码必须同时包含数字与字母!"
+
+2021-06-16 09:56:19,477 - root - INFO - user_management  - 62 - 开始执行	停用正常用户	测试用例
+2021-06-16 09:56:19,770 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:56:19,771 - root - INFO - user_management  - 65 - case:停用正常用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用成功！","code":200,"refresh":true,"message":"停用成功！"}
+预期结果"msg":"停用成功！"
+
+2021-06-16 09:56:19,772 - root - INFO - user_management  - 62 - 开始执行	停用id为空	测试用例
+2021-06-16 09:56:19,843 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:56:19,844 - root - INFO - user_management  - 65 - case:停用id为空，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"停用失败，请稍候再试。。。","code":500,"message":"停用失败，请稍候再试。。。"}
+预期结果"msg":"停用失败，请稍候再试。。。"
+
+2021-06-16 09:56:19,845 - root - INFO - user_management  - 62 - 开始执行	停用admin用户	测试用例
+2021-06-16 09:56:19,977 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:56:19,978 - root - INFO - user_management  - 65 - case:停用admin用户，
+请求地址：http://192.168.220.1:8080/users/inactiveAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '11'}
+请求正文：ids[]=1
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"【admin】不能被停用！","code":500,"message":"【admin】不能被停用！"}
+预期结果"msg":"【admin】不能被停用！"
+
+2021-06-16 09:56:19,979 - root - INFO - user_management  - 62 - 开始执行	启用已停用用户	测试用例
+2021-06-16 09:56:20,265 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:56:20,266 - root - INFO - user_management  - 65 - case:启用已停用用户，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '14'}
+请求正文：ids[]=2900
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用成功！","code":200,"refresh":true,"message":"启用成功！"}
+预期结果"msg":"启用成功！"
+
+2021-06-16 09:56:20,267 - root - INFO - user_management  - 62 - 开始执行	启用id为空	测试用例
+2021-06-16 09:56:20,323 - root - INFO - user_management  - 64 - 正在进行对比
+2021-06-16 09:56:20,325 - root - INFO - user_management  - 65 - case:启用id为空，
+请求地址：http://192.168.220.1:8080/users/activeAction/ajax	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '10'}
+请求正文：ids[]=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:19 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"启用失败，请稍候再试。。。","code":500,"message":"启用失败，请稍候再试。。。"}
+预期结果"msg":"启用失败，请稍候再试。。。"
+
+2021-06-16 09:56:20,326 - root - INFO - user_management  - 53 - 开始执行	修改账号名称为正确数据	测试用例
+2021-06-16 09:56:20,723 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:56:20,725 - root - INFO - user_management  - 56 - case:修改账号名称为正确数据，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '57'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=283775
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:20 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改完成","code":200,"refresh":true,"message":"修改完成"}
+预期结果"msg":"修改完成"
+
+2021-06-16 09:56:20,727 - root - INFO - user_management  - 53 - 开始执行	修改账号名称为空	测试用例
+2021-06-16 09:56:20,867 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:56:20,868 - root - INFO - user_management  - 56 - case:修改账号名称为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '51'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:20 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"code":500
+
+2021-06-16 09:56:20,869 - root - INFO - user_management  - 53 - 开始执行	修改账号名称已存在	测试用例
+2021-06-16 09:56:21,039 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:56:21,041 - root - INFO - user_management  - 56 - case:修改账号名称已存在，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '56'}
+请求正文：invalid_ie_cache=1621303542499&record=2523&account=admin
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:20 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"账户名称已经存在，请更换后再试。。。","code":500,"message":"账户名称已经存在，请更换后再试。。。"}
+预期结果"msg":"账户名称已经存在，请更换后再试。。。"
+
+2021-06-16 09:56:21,042 - root - INFO - user_management  - 53 - 开始执行	record为空	测试用例
+2021-06-16 09:56:21,159 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:56:21,159 - root - INFO - user_management  - 56 - case:record为空，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '54'}
+请求正文：invalid_ie_cache=1621303542499&record=&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:20 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
+2021-06-16 09:56:21,160 - root - INFO - user_management  - 53 - 开始执行	record错误	测试用例
+2021-06-16 09:56:21,328 - root - INFO - user_management  - 55 - 正在进行对比
+2021-06-16 09:56:21,331 - root - INFO - user_management  - 56 - case:record错误，
+请求地址：http://192.168.220.1:8080/users/chanageaccountAction/save	请求方式:POST
+请求头：{'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Content-Length': '58'}
+请求正文：invalid_ie_cache=1621303542499&record=-789&account=1111333
+响应头：{'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Access-Control-Allow-Headers': '*', 'Access-Control-Max-Age': '1800', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Date': 'Wed, 16 Jun 2021 01:56:20 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+响应正文：{"msg":"修改失败","code":500,"message":"修改失败"}
+预期结果"msg":"修改失败"
+
