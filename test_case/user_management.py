@@ -19,7 +19,7 @@ users_ajax=defs.row_column_read_datas(path+"/user_management.xlsx","users_ajax",
 @ddt
 class Test_user_management(unittest.TestCase):
     def setUp(self):
-        self.headers={"Cookie":"JSESSIONID=b4c2b65b-3ff5-45f9-acb4-0c3b55e67a09; sys__username=; sys__password=",
+        self.headers={"Cookie":"JSESSIONID=b08930c8-1e06-48bc-9469-faddc1eeb7ee; sys__username=; sys__password=",
          "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"}
         self.log=basepage.BasePage().get_log()
 

@@ -72,7 +72,6 @@ PyQRCode==1.2.1
 PyQt5==5.15.0
 PyQt5-sip==12.8.1
 pyqt5-tools==5.15.0.1.7.1
-PyQt5Designer @ file:///D:/PyQt5Designer-5.14.1-py3-none-win_amd64.whl
 PyRect==0.1.4
 PyScreeze==0.1.27
 pytesseract==0.3.7
@@ -95,7 +94,6 @@ six==1.14.0
 soupsieve==2.0.1
 sqlparse==0.3.1
 toml==0.10.1
-Twisted @ file:///D:/Twisted-20.3.0-cp37-cp37m-win_amd64.whl
 uiautomator2==2.5.3
 urllib3==1.25.7
 w3lib==1.22.0

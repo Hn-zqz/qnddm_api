@@ -5,7 +5,7 @@
 # @Email:2560500412@qq.com
 import os
 from common.HTMLTestRunnerNew import HTMLTestRunner
-import BeautifulReport as brf
+import common.BeautifulReport as brf
 from test_case import user_management
 from report import postion
 import unittest,time
