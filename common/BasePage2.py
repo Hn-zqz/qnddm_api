@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author ：大熊
 # @Time：2019/5/28 23:56
-# @Software：求索教育
-# @Email:122712084@qq.com
+
 import os
 import sys
 import time
